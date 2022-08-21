@@ -48,4 +48,10 @@ function addPlayer(element){
 
 }
 
+function disableBtn(btn) {
+    btn.disabled = true;
+}
+
+
+
 
