@@ -11,24 +11,27 @@ function display(players){
         <th>${i+1}</th>
         <td>${name}</td>
         `;
-        tableBody.appendChild(tr);
-
-        let playerNumber = playerList.length;
-        // console.log(playerNumber);
-        
+        tableBody.appendChild(tr);        
     }
 }
 function calculate(players){
+    let playerNumber;
     for(let i = 0; i < players.length; i++){
-        let playerNumber = playerList.length; 
-        document.getElementById('btn-calculate').addEventListener('click', function(){
+        playerNumber = playerList.length; 
+    }   
+     document.getElementById('btn-calculate').addEventListener('click', function(){
             const perPlayer = getValueById("per-player-field");
             const totalExpenses = perPlayer * playerNumber;
             setValueById('total-expenses-field', totalExpenses);
-            return totalExpenses;
-            
+        
+            document.getElementById('btn-calculate-total').addEventListener('click', function(){
+                const managerExpenses = getValueById("manager-expenses-field");
+                const coachExpenses = getValueById("coach-expenses-field");
+                const newTotalExpenses =  managerExpenses + coachExpenses + totalExpenses;
+                setValueById('new-total-expenses-field', newTotalExpenses);
+            });   
         });
-    }   
+    
 }
 
 function addPlayer(element){
