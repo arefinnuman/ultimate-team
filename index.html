@@ -68,6 +68,7 @@
 
       <!-- Ultimate team Section -->
     </section>
+
     <section class="text-center m-4">
       <h1>Build your <span class="text-primary">Ultimate Team</span></h1>
       <p>Build and share your Real Madrid Legends Ultimate Team with our Ultimate Team Squad Builder. ... Build your own
@@ -77,9 +78,10 @@
 
 
   <main>
-    <section class="container d-flex justify-content-between">
+    <section class="container d-flex flex-lg-row flex-column justify-content-between ">
       <div class="row row-cols-1 row-cols-md-3 g-4">
 
+        <!-- Player List -->
         <!-- Casemiro -->
         <div class="col">
           <div class="card">
@@ -90,6 +92,7 @@
             </div>
           </div>
         </div>
+
         <!-- Gerrath Bale -->
         <div class="col">
           <div class="card">
@@ -100,6 +103,7 @@
             </div>
           </div>
         </div>
+
         <!-- Marcelo -->
         <div class="col">
           <div class="card">
@@ -110,6 +114,7 @@
             </div>
           </div>
         </div>
+
         <!-- RAMOS -->
         <div class="col">
           <div class="card">
@@ -121,6 +126,7 @@
             </div>
           </div>
         </div>
+
         <!-- Ronaldo  -->
         <div class="col">
           <div class="card">
@@ -132,6 +138,7 @@
             </div>
           </div>
         </div>
+
         <!-- Iker Casillas -->
         <div class="col">
           <div class="card">
@@ -142,7 +149,7 @@
             </div>
           </div>
         </div>
-        
+
         <!-- Kaka -->
         <div class="col">
           <div class="card">
@@ -174,7 +181,7 @@
             <div class="card-body">
               <h5>Zinadin Zidane</h5>
               <p></p>
-              <button class="btn btn-primary" onclick="addPlayer(this),disableBtn(this)">Select</button>
+              <button class="btn btn-primary" onclick="addPlayer(this) ,disableBtn(this)">Select</button>
             </div>
           </div>
         </div>
@@ -215,10 +222,11 @@
         </div>
       </div>
 
-      <div>
-        <div class="card border-dark rounded-4 shadow-lg ms-5 p-2" style="width: 18rem; height: 25rem;">
+      <div class="">
+        <div class="card border-dark rounded-4 shadow-lg mt-3 ms-lg-5 ms-3" style="width: 18rem; height: 25rem;">
           <div class="card-body">
             <h1 class="card-title">Build Your Ultimate Team</h1>
+            <h3>Select your <span id="total-selection"></span></h3>
             <table>
               <tbody id="ultimate-team">
 
@@ -227,7 +235,7 @@
           </div>
         </div>
 
-        <div class="card border-dark rounded-4 shadow-lg mt-3 ms-5 p-2" style="width: 18rem;">
+        <div class="card border-dark rounded-4 shadow-lg mt-3 ms-lg-5 ms-3" style="width: 18rem;">
           <div class="card-body">
             <h1 class="card-title">Budget</h1>
             <label for="">
@@ -254,7 +262,8 @@
   </main>
   <!-- Js FIles -->
   <script src="scripts/utilities.js"></script>
-  <script src="scripts/players.js"></script>
+  <script src="scripts/functionalities.js"></script>
+
   <!-- Bootstrap -->
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js"
     integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa"

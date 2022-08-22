@@ -9,3 +9,8 @@ function setValueById(elementId, value){
     const textElement = document.getElementById(elementId);
     textElement.innerText = value;
 }
+
+function disableBtn(btn) {
+    btn.disabled = true;
+}
+
