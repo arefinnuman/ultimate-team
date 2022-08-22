@@ -9,12 +9,11 @@ function display(players) {
 
     for (let i = 0; i < players.length; i++) {
         const name = playerList[i].playerName;
-        const tr = document.createElement("tr");
-        tr.innerHTML = `
-            <th>${i + 1}</th>
-            <td>${name}</td>
+        const list = document.createElement("list");
+        list.innerHTML = `
+            <li>${name}</li>
             `;
-        tableBody.appendChild(tr);
+        tableBody.appendChild(list);
         console.log(playerList.length);
     }
 }
@@ -59,7 +58,6 @@ function calculate(players) {
                 });
         });
 }
-
 
 function addPlayer(element) {
     const playerName = element.parentNode.children[0].innerText;
